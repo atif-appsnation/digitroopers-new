@@ -1,3 +1,13 @@
+:root {
+    --purple-color: #3832a0;
+    --blue-color: #0859d3;
+    --brown-color: #35312f;
+    --golden-color: #a68b4f;
+    --red-color: #EA0009;
+    --orange-color: #F15A24;
+    --green-color: #A5CB39;
+}
+
 /* Scrollbar Theme */
 
 ::-webkit-scrollbar {
@@ -7,6 +17,7 @@
 ::-webkit-scrollbar-track {
     background: #e8e8e8;
 }
+
 #scrollUp
 ::-webkit-scrollbar-thumb:hover {
     background: #fb5496;
@@ -2618,7 +2629,8 @@ footer.ftshap:before {
 /**breadcrumb**/
 
 .breadcrumb-area {
-    padding: 300px 0px 90px 0px;
+    /* padding: 300px 0px 90px 0px; */
+    padding: 300px 0px;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -2658,7 +2670,7 @@ footer.ftshap:before {
     background: linear-gradient(135deg, #ffdee9 0%, #c8fff4 100%); */
 }
 
-.breadcrumb-area:before {
+/* .breadcrumb-area:before {
     content: "";
     position: absolute;
     top: 0;
@@ -2668,12 +2680,12 @@ footer.ftshap:before {
     right: 0;
     left: 0;
     z-index: 0;
-    /* background: -moz-linear-gradient(-45deg, #ffdee9 0%, #c8fff4 100%);
+    background: -moz-linear-gradient(-45deg, #ffdee9 0%, #c8fff4 100%);
     background: -webkit-linear-gradient(-45deg, #ffdee9 0%, #c8fff4 100%);
-    background: linear-gradient(135deg, #ffdee9 0%, #c8fff4 100%); */
-}
+    background: linear-gradient(135deg, #ffdee9 0%, #c8fff4 100%); 
+}*/
 
-.breadcrumb-area:after {
+/* .breadcrumb-area:after {
     content: "";
     z-index: 0;
     background: url(../images/banner/banner-shap-2.webp);
@@ -2687,7 +2699,7 @@ footer.ftshap:before {
     z-index: 1;
     background-position: center right;
     background-size: contain;
-}
+} */
 
 .breadcrumb-area ul li {
     display: block;
@@ -9063,9 +9075,115 @@ html .mt15 {
 .privacy-banner {
     padding: 300px 0px 200px 0px;
 }
+
 .banner-thank {
     background: url(../images/thank-you/thank-you.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+/* Case Studies */
+
+/* Travel Agency */
+
+.travel-agency-banner {
+    background-image: url(../images/case-studies/travel-agency/header-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blue-favicon {
+    width: 100%;
+}
+
+.blue-favicon img {
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.white-favicon {
+    background-image: linear-gradient(to right, #3832A0, #007BCF);
+    width: 100%;
+}
+
+.white-favicon img {
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.left-border {
+    border-left: 3px solid #3832A0;
+}
+
+.blue-logo img {
+    display: block;
+    margin: 0px auto;
+}
+
+.shapes-travel-agency h2, .color-travel-agency h2, .type-faces-travel-agency h2, .mockups-travel-agency h2 {
+    color: var(--purple-color);
+}
+
+.color-travel-agency h4 {
+    color: var(--purple-color);
+    padding-bottom: 15px;
+}
+
+.visuals-travel-background {
+    background-image: url(../images/case-studies/travel-agency/visuals-background.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Real Estate */
+
+.real-estate-banner {
+    background-image: url(../images/case-studies/real-estate/header-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.golden-favicon {
+    width: 100%;
+}
+
+.golden-favicon img {
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.white-favicon {
+    background: var(--brown-color);
+    width: 100%;
+}
+
+.white-favicon img {
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.left-border {
+    border-left: 3px solid var(--brown-color);
+}
+
+.black-logo img {
+    display: block;
+    margin: 0px auto;
+}
+
+.logo-creation-real-estate h2, .color-real-estate h2, .type-faces-real-estate h2, .mockups-real-estate h2 {
+    color: var(--brown-color);
+}
+
+.visuals-real-estate-background {
+    background-image: url(../images/case-studies/real-estate/visuals-background.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

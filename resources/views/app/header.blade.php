@@ -22,24 +22,24 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--<meta name="theme-color" content="#2e2a8f"> -->
 	<!--website-favicon-->
-	<link href="images/favicon.webp" rel="icon">
+	<link href="{{asset('images/favicon.webp')}}" rel="icon">
 	<!--plugin-css-->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/plugin.min.css" rel="stylesheet">
-	<link href="css/swiper.min.css" rel="stylesheet">
-	<link href="css/all.min.css" rel="stylesheet">
-	<link href="css/fonts.css" rel="stylesheet">
+	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{asset('css/plugin.min.css')}}" rel="stylesheet">
+	<link href="{{asset('css/swiper.min.css')}}" rel="stylesheet">
+	<link href="{{asset('css/all.min.css')}}" rel="stylesheet">
+	<link href="{{asset('css/fonts.css')}}" rel="stylesheet">
 
 	<!-- corousel-->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
+	<link rel="stylesheet" href="{{asset('css/carousel.css')}}">
 	<!-- xxxx -->
 	<!-- template-style-->
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
-	<link href="css/darkmode.css" rel="stylesheet">
-	<link href="css/gdpr-cookie.css" rel="stylesheet">
+	<link href="{{asset('css/style.css')}}" rel="stylesheet">
+	<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
+	<link href="{{asset('css/darkmode.css')}}" rel="stylesheet">
+	<link href="{{asset('css/gdpr-cookie.css')}}" rel="stylesheet">
 
 
 	<!-- magnific cdn for video -->
@@ -60,14 +60,6 @@
 	<div class="mouse-cursor cursor-follow"></div>
 	<!-- Custom mouse end-->
 
-	<!--Start Preloader -->
-	<!-- <div class="onloadpage" id="page_loader">
-		<div class="pre-content">
-			<div class="logo-pre"><img src="images/digitroopers-logo.webp" alt="Logo" class="img-fluid" /></div>
-			<div class="pre-text- text-radius text-light text-animation bg-b">Top Notch Digital Marketing Agency | DigiTroopers 2021</div>
-		</div>
-	</div> -->
-	<!--End Preloader -->
 
 	<!-- Start Side Menu -->
 	<div class="side-menu -medium -right -space --center">
@@ -105,12 +97,15 @@
 		<div class="container-fluid m-pad">
 			<div class="menu-header">
 				<div class="dsk-logo">
-					<a class="nav-brand" href="{{url('/')}}"> <img src="images/digitroopers-white-logo.webp" alt="Logo" class="mega-white-logo" /> <img src="images/digitroopers-logo.webp" alt="Logo" class="mega-darks-logo" /> </a>
+					<a class="nav-brand" href="{{url('/')}}">
+						<img src="{{asset('images/digitroopers-white-logo.webp')}}" alt="Logo" class="mega-white-logo" />
+						<img src="{{asset('images/digitroopers-logo.webp')}}" alt="Logo" class="mega-darks-logo" />
+					</a>
 				</div>
 				<div class="custom-nav" role="navigation">
 					<ul class="nav-list">
 						<li class="sbmenu">
-							<a href="{{url('/')}}" class="menu-links active-menu first-menu">Home</a>
+							<a href="{{url('/')}}" class="menu-links first-menu">Home</a>
 						</li>
 						<li class="sbmenu">
 							<a href="{{url('/about-us')}}" class="menu-links">About Us</a>
@@ -313,10 +308,10 @@
 									<div class="inquiry-card-nn">
 										<!-- <div class="title-inq-c">FOR SALES DEPARTMENT</div> -->
 										<ul>
-											<li><a href="tel:tel:+12535284057"><img src="images/flags/us.webp" alt="USA office" class="flags-size"> +1 (253) 528-4057 </a></li>
-											<!-- <li><a href="tel:+19499810151"><img src="images/flags/us.webp" alt="USA office" class="flags-size"> +1 (949) 981-0151</a></li> -->
-											<li><a href="tel:+966507438993"><img src="images/flags/sa.webp" alt="Saudi Arabia office" class="flags-size"> +966 507438993 </a> </li>
-											<!-- <li><a href="tel:+92309221104"><img src="images/flags/pk.webp" alt="Pakistan office" class="flags-size"> +92 (309) 222-1104 </a></li> -->
+											<li><a href="tel:tel:+12535284057"><img src="{{asset('images/flags/us.webp')}}" alt="USA office" class="flags-size"> +1 (253) 528-4057 </a></li>
+											<!-- <li><a href="tel:+19499810151"><img src="{{asset('images/flags/us.webp')}}" alt="USA office" class="flags-size"> +1 (949) 981-0151</a></li> -->
+											<li><a href="tel:+966507438993"><img src="{{asset('images/flags/sa.webp')}}" alt="Saudi Arabia office" class="flags-size"> +966 507438993 </a> </li>
+											<!-- <li><a href="tel:+92309221104"><img src="{{asset('images/flags/pk.webp')}}" alt="Pakistan office" class="flags-size"> +92 (309) 222-1104 </a></li> -->
 											<li><i class="fas fa-envelope"></i><a href="mailto:iinfo@digitroopers.com">info@digitroopers.com</a></li>
 											<li><i class="fas fa-envelope"></i><a href="mailto:sales@digitroopers.com">sales@digitroopers.com</a></li>
 										</ul>
@@ -435,7 +430,9 @@
 					</div>
 					<div class="modal-body">
 						<div class="form-block fdgn2 mt10 mb10">
-							<form action="{{route('leads')}}" method="post" id="{{route('leads')}}" data-toggle="validator" class="shake">
+					{!! NoCaptcha::renderJs() !!}
+
+							<form action="{{route('leads')}}" method="post" id="contactForm33" data-toggle="validator" class="shake">
 								@csrf
 								<div class="row">
 									<div class="form-group col-sm-12">
@@ -487,6 +484,9 @@
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
+								<div class="form-group col-sm-12 captchaContainer3" id="captchaContainer">
+								{!! NoCaptcha::display() !!}
+							</div>
 								<div class="modal-footer">
 									<button type="submit" id="form-submit" name="submit" class="btn lnk btn-main bg-btn">Submit <i class="fas fa-chevron-right fa-icon"></i></button>
 								</div>
@@ -511,7 +511,8 @@
 
 				<div class="modal-body">
 					<div class="form-block">
-						<form action="{{route('leads')}}" method="post" id="contactForm" data-toggle="validator" class="shake">
+					{!! NoCaptcha::renderJs() !!}
+						<form action="{{route('leads')}}" method="post" id="contactForm1" data-toggle="validator" class="shake">
 							@csrf
 							<div class="row">
 								<div class="form-group col-sm-6">
@@ -555,6 +556,9 @@
 								<textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
 								<div class="help-block with-errors"></div>
 							</div>
+							<div class="form-group mb-2 captchaContainer" id="captchaContainer" style="display: none;">
+								{!! NoCaptcha::display() !!}
+							</div>
 							<div class="modal-footer">
 								<button type="submit" name="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit <i class="fas fa-chevron-right fa-icon"></i></button>
 							</div>
@@ -570,4 +574,5 @@
 		<strong>{{$message}}</strong>
 	</div>
 	@endif
+
 	<!--End Quote contact-->

@@ -13,7 +13,7 @@
                             <i class="fas fa-chevron-right fa-icon"></i>
                         </a>
                     </div>
-                    <p>+1 (253) 384-5612</p>
+                    <p>  +1 (253) 528-4057</p>
                 </div>
             </div>
             <!-- form div -->
@@ -22,7 +22,9 @@
 					<div class="card-body">
 						<h3 class="text-center pb-3">Request For Quote</h3>
 						<div class="form-block">
-							<form action="{{route('leads')}}" method="post" id="contactForm" data-toggle="validator" class="shake">
+					{!! NoCaptcha::renderJs() !!}
+
+							<form action="{{route('leads')}}" method="post" id="contactForm2" data-toggle="validator" class="shake">
 								@csrf
 								<div class="row">
 									<div class="form-group col-sm-12 col-md-12">
@@ -75,6 +77,9 @@
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
+                                <div class="form-group mb-2 captchaContainer2" id="captchaContainer" style="display: none;">
+								{!! NoCaptcha::display() !!}
+							</div>
 								<button type="submit" name="submit" id="form-submit" class="btn-main bg-btn lnk">Submit <i class="fas fa-chevron-right fa-icon"></i></button>
 								<div id="msgSubmit" class="h3 text-center hidden"></div>
 								<div class="clearfix"></div>
@@ -501,7 +506,7 @@
                             </div>
                             <div class="text-fld-nx v-center">
                                 <span class="small-text rows">Our contact Number</span>
-                                <span class="large-text rows">+1 (310) 596-3004</span>
+                                <span class="large-text rows">  +1 (253) 528-4057</span>
                             </div>
                         </a>
                     </div>
@@ -519,6 +524,8 @@
             <div class="col-lg-6">
                 <div class="contact-form-card-pr contact-block-btm">
                     <div class="form-block">
+					{!! NoCaptcha::renderJs() !!}
+
                         <form action="{{route('leads')}}" method="post" id="contactForm" data-toggle="validator" class="shake">
                             @csrf
                             <div class="row">
@@ -563,6 +570,10 @@
                                 <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
+                            <div class="form-group mb-2 captchaContainer1" id="captchaContainer" style="display: none;">
+								{!! NoCaptcha::display() !!}
+							</div>
+                            
                             <button type="submit" name="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit <i class="fas fa-chevron-right fa-icon"></i></button>
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                             <div class="clearfix"></div>

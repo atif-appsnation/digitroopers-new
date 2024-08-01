@@ -16,7 +16,7 @@
 							<a href="https://www.facebook.com/DigiTroopers/" target="blank"><i class="fa-brands fa-facebook"></i></a>
 							<a href="https://twitter.com/Digi_Troopers/" target="blank"><i class="fa-brands fa-x-twitter"></i></a>
 							<a href="https://www.linkedin.com/company/digitroopers/" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
-							<a href="https://www.instagram.com/DigiTrooperss/" target="blank"><i class="fa-brands fa-instagram"></i></a>
+							<!-- <a href="https://www.instagram.com/DigiTrooperss/" target="blank"><i class="fa-brands fa-instagram"></i></a> -->
 						</div>
 					</div>
 				</div>
@@ -36,7 +36,7 @@
 						<h5>USEFUL LINKS</h5>
 						<ul class="footer-address-list link-hover">
 							<li><a href="{{url('/')}}">Home</a></li>
-							<li><a href="{{url('/aboutus')}}">About Us</a></li>
+							<li><a href="{{url('/about-us')}}">About Us</a></li>
 							<li><a href="{{url('/portfolio')}}">Portfolio</a></li>
 							<li><a href="{{url('/insights')}}">Insights</a></li>
 							<li><a href="{{url('/career')}}">Career</a></li>
@@ -67,7 +67,7 @@
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="footer-copyrights">
-				<p class="py-2">© Copyrights 2021 DigiTroopers. All Rights Reserved.</p>
+				<p class="py-2">© Copyrights 2024 DigiTroopers. All Rights Reserved.</p>
 			</div>
 		</div>
 	</div>
@@ -77,21 +77,19 @@
 
 
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/plugin.min.js"></script>
-<script src="js/swiper.min.js"></script>
+<script src="{{asset('js/vendor/modernizr-3.5.0.min.js')}}"></script>
+<script src="{{asset('js/popper.js')}}"></script>
+<script src="{{asset('js/jquery.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('js/plugin.min.js')}}"></script>
+<script src="{{asset('js/swiper.min.js')}}"></script>
+<script src="{{asset('js/tweenmax.min.js')}}"></script>
+<script src="{{asset('js/main.js')}}"></script>
+<script src="{{asset('js/owl.carousel.min.js')}}"></script>
+<script src="{{asset('js/carousel.js')}}"></script>
+<script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
 <!-- <script src="js/preloader.js"></script> -->
-<script src="js/tweenmax.min.js"></script>
 <!-- <script src="js/gdprcookies.js"></script> -->
-<!--common script file-->
-<script src="js/main.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/carousel.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
 	$(document).ready(function() {
@@ -135,6 +133,56 @@
 </script>
 <!--End of Tawk.to Script-->
 
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        
+		if(document.getElementsByClassName('captchaContainer1')[0].style.display == 'none')
+		{
+			event.preventDefault(); 
+
+		}
+        document.getElementsByClassName('captchaContainer1')[0].style.display = 'block';
+    });
+
+    document.getElementById('contactForm1').addEventListener('submit', function(event) {
+        
+		if(document.getElementsByClassName('captchaContainer')[0].style.display == 'none')
+		{
+			event.preventDefault(); 
+
+		}
+        document.getElementsByClassName('captchaContainer')[0].style.display = 'block';
+    });
+
+	document.getElementById('contactForm2').addEventListener('submit', function(event) {
+        
+		if(document.getElementsByClassName('captchaContainer2')[0].style.display == 'none')
+		{
+			event.preventDefault(); 
+
+		}
+        document.getElementsByClassName('captchaContainer2')[0].style.display = 'block';
+    });
+
+	document.getElementById('contactForm33').addEventListener('submit', function(event) {
+		if(document.getElementsByClassName('captchaContainer3')[0].style.display == 'none')
+		{
+			event.preventDefault(); 
+
+		}
+        document.getElementsByClassName('captchaContainer3')[0].style.display = 'block';
+    });
+</script>
+
+<script>
+    // Automatically close the alert after 5 seconds
+    window.setTimeout(function() {
+        document.querySelector('.alert').classList.add('fade');
+        setTimeout(function() {
+            document.querySelector('.alert').remove();
+        }, 150); // Bootstrap animation duration is 150ms
+    }, 5000); // 5000 milliseconds = 5 seconds
+</script>
 </body>
 
 </html>

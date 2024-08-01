@@ -39,9 +39,9 @@ class HomeController extends Controller
             'testimonial' => $testimonial,
             'metatag' => $metatag,
             'metatitle' => $metatitle,
-
         ]);
     }
+
     public function leads(Request $request)
     {
         // dd($request);
@@ -51,11 +51,11 @@ class HomeController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|max:255',
             'mobile' => 'required|max:15',
-            // 'mobile' => 'required|regex:/(01)[0-9]{9}/'
             'subject' => 'required|max:255',
             'service' => 'max:255',
             'company' => 'max:255',
-            'message' => ''
+            'message' => '',
+            'g-recaptcha-response' => 'required|captcha',
         ]);
         $visit->name = $field['name'];
         $visit->email = $field['email'];
@@ -67,8 +67,6 @@ class HomeController extends Controller
         $visit->save();
 
         $details = [
-            // "title" => "Black Friday",
-            // "body" => "Black Friday deal",
             "name" => $field['name'],
             "email" => $field['email'],
             "mobile" => $field['mobile'],
@@ -78,15 +76,9 @@ class HomeController extends Controller
             "message" => $field['message'],
 
         ];
-        // Mail::to("info@digitroopers.com")->send(new LeadReceivedMail($details));
-        // Mail::to("sales@digitroopers.com")->send(new LeadReceivedMail($details));
-        // Mail::to("waqar@futurealiti.com")->send(new LeadReceivedMail($details));
-
-        // Mail::to($field['email'])->send(new LeadSendMail($details));
-
         return Redirect::to('/thank-you');
-        // return view('welcome');
     }
+
     public function aboutus()
     {
         $metabank = Metabank::where('slug', 'Aboutus')->where('type', 'Tag')->get();
@@ -96,6 +88,7 @@ class HomeController extends Controller
         $metatag = Metatag::where('slug', 'Aboutus')->get();
         return view('aboutus', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function portfolio()
     {
         $metabank = Metabank::where('slug', 'Portfolio')->where('type', 'Tag')->get();
@@ -129,15 +122,16 @@ class HomeController extends Controller
             // 'portfolioapp' => $portfolio_app,
         ]);
     }
+
     public function insights()
     {
         $metabank = Metabank::where('slug', 'Insights')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'Insights')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'Insights')->get();
         $metatag = Metatag::where('slug', 'Insights')->get();
         return view('insights', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function contactus()
     {
         $metabank = Metabank::where('slug', 'Contactus')->where('type', 'Tag')->get();
@@ -146,15 +140,16 @@ class HomeController extends Controller
         $metatag = Metatag::where('slug', 'Contactus')->get();
         return view('contactus', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function ourprocess()
     {
         $metabank = Metabank::where('slug', 'Ourprocess')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'Ourprocess')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'Ourprocess')->get();
         $metatag = Metatag::where('slug', 'Ourprocess')->get();
         return view('ourprocess', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function websites()
     {
         $metabank = Metabank::where('slug', 'WebDevelopment')->where('type', 'Tag')->get();
@@ -162,10 +157,8 @@ class HomeController extends Controller
         $pricingweb = Pricing::where('type', 'Web Development')->get();
         $testimonial = Testimonial::where('web', 1)->orderBy('lft', 'asc')->get();
         $portfolio_prime = Portfolio::where('comments', 'LIKE', '%web%')->orderBy('lft', 'asc')->get();
-
         $metatitle = Metatitle::where('slug', 'WebDevelopment')->get();
         $metatag = Metatag::where('slug', 'WebDevelopment')->get();
-
 
         return view('website', [
             'metabank' => $metabank,
@@ -178,24 +171,26 @@ class HomeController extends Controller
 
         ]);
     }
+
     public function clients()
     {
         $metabank = Metabank::where('slug', 'Clients')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'Clients')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'Clients')->get();
         $metatag = Metatag::where('slug', 'Clients')->get();
         $clients = Client::orderBy('lft', 'asc')->get()->toArray();
+
         return view('clients', ['metabank' => $metabank, 'metabank2' => $metabank2, 'clients' => $clients, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function testimonial()
     {
         $metabank = Metabank::where('slug', 'Testimonial')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'Testimonial')->where('type', 'Meta')->get();
         $metatitle = Metatitle::where('slug', 'Testimonial')->get();
         $metatag = Metatag::where('slug', 'Testimonial')->get();
-
         $testimonial = Testimonial::orderBy('lft', 'asc')->get()->toArray();
+
         return view('testimonial', [
             'metabank' => $metabank,
             'metabank2' => $metabank2,
@@ -204,14 +199,17 @@ class HomeController extends Controller
             'metatitle' => $metatitle,
         ]);
     }
+
     public function career()
     {
         $metabank = Metabank::where('slug', 'Career')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'Career')->where('type', 'Meta')->get();
         $metatitle = Metatitle::where('slug', 'Career')->get();
         $metatag = Metatag::where('slug', 'Career')->get();
+
         return view('career', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function packages()
     {
         $metabank = Metabank::where('slug', 'Packages')->where('type', 'Tag')->get();
@@ -227,14 +225,9 @@ class HomeController extends Controller
         $metatag = Metatag::where('slug', 'Packages')->get();
         // added more tabs
         $pricinglogo = Pricing::where('type', 'Logo Design')->get();
-
         $pricinganimation = Pricing::where('type', 'Animation')->get();
-
         $pricinggame = Pricing::where('type', 'Game Development')->get();
-
         $pricingeweb = Pricing::where('type', 'E-Commerce Web')->get();
-
-
 
         return view('packages', [
             'metabank' => $metabank,
@@ -246,20 +239,16 @@ class HomeController extends Controller
             'pricingemail' => $pricingemail,
             'pricingpaid' => $pricingpaid,
             'pricingecommerce' => $pricingecommerce,
-
             'pricinglogo' => $pricinglogo,
-
             'pricinganimation' => $pricinganimation,
-
             'pricinggame' => $pricinggame,
-
             'pricingeweb' => $pricingeweb,
-
             'metatag' => $metatag,
             'metatitle' => $metatitle,
 
         ]);
     }
+
     public function graphicdesign()
     {
         $metabank = Metabank::where('slug', 'Designing')->where('type', 'Tag')->get();
@@ -267,9 +256,9 @@ class HomeController extends Controller
         $pricingdesign = Pricing::where('type', 'Design')->get();
         $testimonial = Testimonial::where('design', 1)->orderBy('lft', 'asc')->get();
         $portfolio_prime = Portfolio::where('comments', 'LIKE', '%design%')->orderBy('lft', 'asc')->get();
-
         $metatitle = Metatitle::where('slug', 'Designing')->get();
         $metatag = Metatag::where('slug', 'Designing')->get();
+
         // dd($portfolio_prime);
         return view(
             'graphic-design',
@@ -284,6 +273,7 @@ class HomeController extends Controller
             ]
         );
     }
+
     public function socialmedia()
     {
         $metabank = Metabank::where('slug', 'SocialMedia')->where('type', 'Tag')->get();
@@ -293,7 +283,6 @@ class HomeController extends Controller
         $portfolio_prime = Portfolio::where('comments', 'LIKE', '%social%')->orderBy('lft', 'asc')->get();
         $metatitle = Metatitle::where('slug', 'SocialMedia')->get();
         $metatag = Metatag::where('slug', 'SocialMedia')->get();
-
 
         return view('social-media', [
             'metabank' => $metabank,
@@ -305,6 +294,7 @@ class HomeController extends Controller
             'metatitle' => $metatitle,
         ]);
     }
+
     public function seo()
     {
         $metabank = Metabank::where('slug', 'Seo')->where('type', 'Tag')->get();
@@ -312,10 +302,8 @@ class HomeController extends Controller
         $pricingseo = Pricing::where('type', 'SEO')->get();
         $testimonial = Testimonial::where('seo', 1)->orderBy('lft', 'asc')->get();
         $portfolio_prime = Portfolio::where('comments', 'LIKE', '%seo%')->orderBy('lft', 'asc')->get();
-
         $metatitle = Metatitle::where('slug', 'Seo')->get();
         $metatag = Metatag::where('slug', 'Seo')->get();
-
 
         return view('seo', [
             'metabank' => $metabank,
@@ -328,6 +316,7 @@ class HomeController extends Controller
 
         ]);
     }
+
     public function emailmarketing()
     {
         $metabank = Metabank::where('slug', 'EmailMarketing')->where('type', 'Tag')->get();
@@ -335,10 +324,8 @@ class HomeController extends Controller
         $pricingemail = Pricing::where('type', 'Email Marketing')->get();
         $testimonial = Testimonial::where('email_marketing', 1)->orderBy('lft', 'asc')->get();
         $portfolio_prime = Portfolio::where('comments', 'LIKE', '%email%')->orderBy('lft', 'asc')->get();
-
         $metatitle = Metatitle::where('slug', 'EmailMarketing')->get();
         $metatag = Metatag::where('slug', 'EmailMarketing')->get();
-
 
         return view('email-marketing', [
             'metabank' => $metabank,
@@ -349,6 +336,7 @@ class HomeController extends Controller
             'metatag' => $metatag, 'metatitle' => $metatitle,
         ]);
     }
+
     public function ecommerce()
     {
         $metabank = Metabank::where('slug', 'Ecommerce')->where('type', 'Tag')->get();
@@ -356,7 +344,6 @@ class HomeController extends Controller
         $pricingecommerce = Pricing::where('type', 'E-Commerce Management')->get();
         $testimonial = Testimonial::where('ecommerce', 1)->orderBy('lft', 'asc')->get();
         $portfolio_prime = Portfolio::where('comments', 'LIKE', '%ecommerce%')->orderBy('lft', 'asc')->get();
-
         $metatitle = Metatitle::where('slug', 'Ecommerce')->get();
         $metatag = Metatag::where('slug', 'Ecommerce')->get();
 
@@ -369,6 +356,7 @@ class HomeController extends Controller
             'metatag' => $metatag, 'metatitle' => $metatitle,
         ]);
     }
+
     public function paidmarketing()
     {
         $metabank = Metabank::where('slug', 'PaidMarketing')->where('type', 'Tag')->get();
@@ -376,8 +364,6 @@ class HomeController extends Controller
         $pricingpaid = Pricing::where('type', 'Paid Marketing')->get();
         $testimonial = Testimonial::where('paid_marketing', 1)->orderBy('lft', 'asc')->get();
         $portfolio_prime = Portfolio::where('comments', 'LIKE', '%paid%')->orderBy('lft', 'asc')->get();
-
-
         $metatitle = Metatitle::where('slug', 'PaidMarketing')->get();
         $metatag = Metatag::where('slug', 'PaidMarketing')->get();
 
@@ -391,152 +377,144 @@ class HomeController extends Controller
         ]);
     }
 
-    /////////////////////////////////
-    /////////////////////////////////
     public function flicksoccer()
     {
         $metabank = Metabank::where('slug', 'FlickSoccer')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'FlickSoccer')->where('type', 'Meta')->get();
         $testimonial = Testimonial::orderBy('lft', 'asc')->get()->toArray();
-
         $metatitle = Metatitle::where('slug', 'FlickSoccer')->get();
         $metatag = Metatag::where('slug', 'FlickSoccer')->get();
 
         return view('flicksoccer', ['metabank' => $metabank, 'metabank2' => $metabank2, 'testimonial' => $testimonial, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function realstate()
     {
         $metabank = Metabank::where('slug', 'RealState')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'RealState')->where('type', 'Meta')->get();
         $testimonial = Testimonial::orderBy('lft', 'asc')->get()->toArray();
-
         $metatitle = Metatitle::where('slug', 'RealState')->get();
         $metatag = Metatag::where('slug', 'RealState')->get();
 
         return view('realstate', ['metabank' => $metabank, 'metabank2' => $metabank2, 'testimonial' => $testimonial, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+    
     public function homestore()
     {
         $metabank = Metabank::where('slug', 'HomeStore')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'HomeStore')->where('type', 'Meta')->get();
         $testimonial = Testimonial::orderBy('lft', 'asc')->get()->toArray();
-
         $metatitle = Metatitle::where('slug', 'HomeStore')->get();
         $metatag = Metatag::where('slug', 'HomeStore')->get();
 
         return view('homestore', ['metabank' => $metabank, 'metabank2' => $metabank2, 'testimonial' => $testimonial, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function rideshare()
     {
         $metabank = Metabank::where('slug', 'RideShare')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'RideShare')->where('type', 'Meta')->get();
         $testimonial = Testimonial::orderBy('lft', 'asc')->get()->toArray();
-
         $metatitle = Metatitle::where('slug', 'RideShare')->get();
         $metatag = Metatag::where('slug', 'RideShare')->get();
 
         return view('rideshare', ['metabank' => $metabank, 'metabank2' => $metabank2, 'testimonial' => $testimonial, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
-    ///////////////////
-    ///////////////////
 
     public function commonppc()
     {
         $metabank = Metabank::where('slug', 'CommonPPC')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'CommonPPC')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'CommonPPC')->get();
         $metatag = Metatag::where('slug', 'CommonPPC')->get();
 
         return view('common-ppc-goal', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function smartppc()
     {
         $metabank = Metabank::where('slug', 'SmartPPC')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'SmartPPC')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'SmartPPC')->get();
         $metatag = Metatag::where('slug', 'SmartPPC')->get();
 
         return view('smart-ppc', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function typeofppc()
     {
         $metabank = Metabank::where('slug', 'TypePPC')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'TypePPC')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'TypePPC')->get();
         $metatag = Metatag::where('slug', 'TypePPC')->get();
 
         return view('types-of-ppc', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function onlinefoundation()
     {
         $metabank = Metabank::where('slug', 'OnlineFoundation')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'OnlineFoundation')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'OnlineFoundation')->get();
         $metatag = Metatag::where('slug', 'OnlineFoundation')->get();
 
         return view('strong-online-foundation', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function localseo()
     {
         $metabank = Metabank::where('slug', 'LocalSeo')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'LocalSeo')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'LocalSeo')->get();
         $metatag = Metatag::where('slug', 'LocalSeo')->get();
 
         return view('local-seo', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function outranking()
     {
         $metabank = Metabank::where('slug', 'OutRanking')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'OutRanking')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'OutRanking')->get();
         $metatag = Metatag::where('slug', 'OutRanking')->get();
 
         return view('outranking', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function optimizebusiness()
     {
         $metabank = Metabank::where('slug', 'OptimizeBusiness')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'OptimizeBusiness')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'OptimizeBusiness')->get();
         $metatag = Metatag::where('slug', 'OptimizeBusiness')->get();
 
         return view('optimize-business', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function jqueryhistory()
     {
         $metabank = Metabank::where('slug', 'JqueryHistory')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'JqueryHistory')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'JqueryHistory')->get();
         $metatag = Metatag::where('slug', 'JqueryHistory')->get();
 
         return view('history-of-jquery', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
+
     public function expireheaders()
     {
         $metabank = Metabank::where('slug', 'ExpireHeaders')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'ExpireHeaders')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'ExpireHeaders')->get();
         $metatag = Metatag::where('slug', 'ExpireHeaders')->get();
 
         return view('add-expire-headers', ['metabank' => $metabank, 'metabank2' => $metabank2, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
 
-
     public function privacypolicy()
     {
         $metabank = Metabank::where('slug', 'PrivacyPolicy')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'PrivacyPolicy')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'PrivacyPolicy')->get();
         $metatag = Metatag::where('slug', 'PrivacyPolicy')->get();
 
@@ -547,7 +525,6 @@ class HomeController extends Controller
     {
         $metabank = Metabank::where('slug', 'TermsAndConditions')->where('type', 'Tag')->get();
         $metabank2 = Metabank::where('slug', 'TermsAndConditions')->where('type', 'Meta')->get();
-
         $metatitle = Metatitle::where('slug', 'TermsAndConditions')->get();
         $metatag = Metatag::where('slug', 'TermsAndConditions')->get();
 
@@ -659,5 +636,49 @@ class HomeController extends Controller
     public function blackfriday()
     {
        return view('black-friday'); 
+    }
+
+    public function gym()
+    {
+        $metabank = Metabank::where('slug', 'Gym')->where('type', 'Tag')->get();
+        $metabank2 = Metabank::where('slug', 'Gym')->where('type', 'Meta')->get();
+        $testimonial = Testimonial::orderBy('lft', 'asc')->get()->toArray();
+        $metatitle = Metatitle::where('slug', 'Gym')->get();
+        $metatag = Metatag::where('slug', 'Gym')->get();
+
+        return view('gym', ['metabank' => $metabank, 'metabank2' => $metabank2, 'testimonial' => $testimonial, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
+    }
+
+    public function loyalty()
+    {
+        $metabank = Metabank::where('slug', 'Loyalty')->where('type', 'Tag')->get();
+        $metabank2 = Metabank::where('slug', 'Loyalty')->where('type', 'Meta')->get();
+        $testimonial = Testimonial::orderBy('lft', 'asc')->get()->toArray();
+        $metatitle = Metatitle::where('slug', 'Loyalty')->get();
+        $metatag = Metatag::where('slug', 'Loyalty')->get();
+
+        return view('loyalty', ['metabank' => $metabank, 'metabank2' => $metabank2, 'testimonial' => $testimonial, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
+    }
+
+    public function realestate()
+    {
+        $metabank = Metabank::where('slug', 'RealEstate')->where('type', 'Tag')->get();
+        $metabank2 = Metabank::where('slug', 'RealEstate')->where('type', 'Meta')->get();
+        $testimonial = Testimonial::orderBy('lft', 'asc')->get()->toArray();
+        $metatitle = Metatitle::where('slug', 'RealEstate')->get();
+        $metatag = Metatag::where('slug', 'RealEstate')->get();
+
+        return view('realestate', ['metabank' => $metabank, 'metabank2' => $metabank2, 'testimonial' => $testimonial, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
+    }
+
+    public function travelagency()
+    {
+        $metabank = Metabank::where('slug', 'TravelAgency')->where('type', 'Tag')->get();
+        $metabank2 = Metabank::where('slug', 'TravelAgency')->where('type', 'Meta')->get();
+        $testimonial = Testimonial::orderBy('lft', 'asc')->get()->toArray();
+        $metatitle = Metatitle::where('slug', 'TravelAgency')->get();
+        $metatag = Metatag::where('slug', 'TravelAgency')->get();
+
+        return view('travelagency', ['metabank' => $metabank, 'metabank2' => $metabank2, 'testimonial' => $testimonial, 'metatag' => $metatag, 'metatitle' => $metatitle,]);
     }
 }

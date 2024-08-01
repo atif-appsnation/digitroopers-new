@@ -57,7 +57,7 @@
 					<p>The purpose of this blog post is to introduce the most frequently used goals for PPC campaigns and give you a quick overview of how experts incorporate them in their marketing strategy. Charting out your business model would go a long way towards deeply understanding what you are trying to achieve through <a href="https://digitroopers.com/paid-marketing">PPC marketing</a> campaigns.</p>
 					<p>All businesses desire to drive more revenue, lower customer acquisition costs and increase ROI/ROAS. But, merely stating these “desires” as goals and objectives would not allow you to gauge the success of your marketing efforts.</p>
 					<p>These are just metrics to track or overarching objectives used as guideposts across all business models. Goals and objectives which are not specific, measurable, attainable, relevant, or time-bound are a catastrophic waste of resources.</p>
-					<p>Let us now discuss what specific <a href="https://digitroopers.com/types-of-ppc-ads/">types of PPC</a> goals and objectives are advantageous to the following popular business models.</p>
+					<p>Let us now discuss what specific <a href="https://digitroopers.com/type-of-ppc/">types of PPC</a> goals and objectives are advantageous to the following popular business models.</p>
 					<h2 class="mt20 mb20">Brick & Mortar Retail / Multistore in PPC Campaign</h2>
 					<h3 class="mb20">Business Model Specific Goals</h3>
 					<p>Increase in-store (physical) footfall, generate telephone or online inquiries, increase revenue, Increase net profit.</p>

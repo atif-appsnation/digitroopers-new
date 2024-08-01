@@ -31,7 +31,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="image-block upset">
-					<img src="images/games/1st.webp" alt="case study" class="img-fluid no-shadow" />
+					<img src="{{asset('images/games/1st.webp')}}" alt="case study" class="img-fluid no-shadow" />
 				</div>
 			</div>
 			<div class="col-lg-6 block-1 v-center">
@@ -46,13 +46,13 @@
 				</div>
 				<div class="project-platform mt60 pl25">
 					<div class="project-platform-used -shadow">
-						<a href="#"><img src="images/icons/android.svg" alt="android"></a>
+						<a href="#"><img src="{{asset('images/icons/android.svg')}}" alt="android"></a>
 					</div>
 					<div class="project-platform-used -shadow">
-						<a href="#"><img src="images/icons/apple.svg" alt="apple"></a>
+						<a href="#"><img src="{{asset('images/icons/apple.svg')}}" alt="apple"></a>
 					</div>
 					<div class="project-platform-used -shadow">
-						<a href="#"><img src="images/icons/windows.svg" alt="windows"></a>
+						<a href="#"><img src="{{asset('images/icons/windows.svg')}}" alt="windows"></a>
 					</div>
 				</div>
 			</div>
@@ -96,7 +96,7 @@
 			</div>
 			<div class="col-lg-6 col-sm-6">
 				<div class="project-view m-mt30">
-					<img src="images/games/2nd.webp" alt="case study" class="img-fluid" />
+					<img src="{{asset('images/games/2nd.webp')}}" alt="case study" class="img-fluid" />
 				</div>
 			</div>
 		</div>
@@ -119,22 +119,22 @@
 			<div class="col-lg-12">
 				<div class="card-nx row">
 					<div class="col-lg-3 col-md-3 col-sm-6 col-6 mt30">
-						<div class="icon-card-"> <img src="images/icons/logo-and-branding.svg" alt="case study" class="img-fluid">
+						<div class="icon-card-"> <img src="{{asset('images/icons/logo-and-branding.svg')}}" alt="case study" class="img-fluid">
 							<h4>UI/UX Design</h4>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6 col-6 mt30">
-						<div class="icon-card-"> <img src="images/icons/branding.svg" alt="case study" class="img-fluid">
+						<div class="icon-card-"> <img src="{{asset('images/icons/branding.svg')}}" alt="case study" class="img-fluid">
 							<h4>Front-end Dev</h4>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6 col-6 mt30">
-						<div class="icon-card-"> <img src="images/icons/back.svg" alt="case study" class="img-fluid">
+						<div class="icon-card-"> <img src="{{asset('images/icons/back.svg')}}" alt="case study" class="img-fluid">
 							<h4>Back-end Dev</h4>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6 col-6 mt30">
-						<div class="icon-card-"> <img src="images/icons/seo.svg" alt="case study" class="img-fluid">
+						<div class="icon-card-"> <img src="{{asset('images/icons/seo.svg')}}" alt="case study" class="img-fluid">
 							<h4>SEO Optimization</h4>
 						</div>
 					</div>
@@ -149,11 +149,11 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="project-screens owl-carousel">
-					<div class="screen-splits"> <img src="images/games/1.webp" alt="case study" class="img-fluid" /></div>
-					<div class="screen-splits"> <img src="images/games/2.webp" alt="case study" class="img-fluid" /></div>
-					<div class="screen-splits"> <img src="images/games/3.webp" alt="case study" class="img-fluid" /></div>
-					<div class="screen-splits"> <img src="images/games/4.webp" alt="case study" class="img-fluid" /></div>
-					<div class="screen-splits"> <img src="images/games/5.webp" alt="case study" class="img-fluid" /></div>
+					<div class="screen-splits"> <img src="{{asset('images/games/1.webp')}}" alt="case study" class="img-fluid" /></div>
+					<div class="screen-splits"> <img src="{{asset('images/games/2.webp')}}" alt="case study" class="img-fluid" /></div>
+					<div class="screen-splits"> <img src="{{asset('images/games/3.webp')}}" alt="case study" class="img-fluid" /></div>
+					<div class="screen-splits"> <img src="{{asset('images/games/4.webp')}}" alt="case study" class="img-fluid" /></div>
+					<div class="screen-splits"> <img src="{{asset('images/games/5.webp')}}" alt="case study" class="img-fluid" /></div>
 				</div>
 			</div>
 		</div>

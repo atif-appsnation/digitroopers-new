@@ -36,6 +36,8 @@
 					<p class="mb60 mt20">We will catch you as early as we receive the message</p>
 				</div>
 				<div class="form-block">
+					{!! NoCaptcha::renderJs() !!}
+
 					<form id="contactForm" action="{{route('leads')}}" method="post" data-toggle="validator" class="shake">
 						@csrf
 						<div class="row">
@@ -80,6 +82,9 @@
 							<textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
 							<div class="help-block with-errors"></div>
 						</div>
+						<div class="form-group mb-2 captchaContainer1" id="captchaContainer" style="display: none;">
+							{!! NoCaptcha::display() !!}
+						</div>
 						<button type="submit" name="submit" id="form-submit" class="btn-main bg-btn lnk">Submit <i class="fas fa-chevron-right fa-icon"></i></button>
 						<div id="msgSubmit" class="h3 text-center hidden"></div>
 						<div class="clearfix"></div>
@@ -91,7 +96,7 @@
 					<div class="contact-card wow fadeIn" data-wow-delay=".2s">
 						<div class="info-card v-center"> <span><i class="fas fa-phone-alt"></i> Phone:</span>
 							<div class="info-body">
-								<p>Assistance hours: Monday – Friday, 9 am to 5 pm</p> <a href="tel:+12533845612"> +1 (253) 384-5612</a>
+								<p>Assistance hours: Monday – Friday, 9 am to 5 pm</p> <a href="tel:+12535284057"> +1 (253) 528-4057</a>
 							</div>
 						</div>
 					</div>
@@ -150,7 +155,7 @@
 						<h4>USA</h4>
 						<p>12316 SE 254th Ct Kent, WA 98030, United States</p>
 						<a href="https://goo.gl/maps/3mWEcHKTQgBkhed5A" target="blank" class="btn-outline">View on Map
-						    <i class="fas fa-chevron-right fa-icon"></i>
+							<i class="fas fa-chevron-right fa-icon"></i>
 						</a>
 					</div>
 				</div>
@@ -162,7 +167,7 @@
 						<h4>Saudia Arabia</h4>
 						<p>Floor 3, Building 7264, Ibn Al Fourat, Jareer, P.O 12837 Riyadh, Saudi Arabia</p>
 						<a href="https://goo.gl/maps/vjT354qaTv9V7hQz8" target="blank" class="btn-outline">View on Map
-						    <i class="fas fa-chevron-right fa-icon"></i>
+							<i class="fas fa-chevron-right fa-icon"></i>
 						</a>
 					</div>
 				</div>

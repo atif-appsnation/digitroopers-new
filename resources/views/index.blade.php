@@ -434,7 +434,7 @@
 							<li>Branding Design</li>
 							<li>Design System</li>
 						</ul>
-						<a href="{{url('/ride-share')}}" class="btn-main bg-btn lnk  mt30">View Case Study
+						<a href="{{url('/case-studies/ride-share')}}" class="btn-main bg-btn lnk  mt30">View Case Study
 							<i class="fas fa-chevron-right fa-icon"></i>
 						</a>
 					</div>
@@ -461,7 +461,7 @@
 							<li>Branding Design</li>
 							<li>Design System</li>
 						</ul>
-						<a href="{{url('/flick-soccer')}}" class="btn-main bg-btn lnk  mt30">View Case Study
+						<a href="{{url('/case-studies/flick-soccer')}}" class="btn-main bg-btn lnk  mt30">View Case Study
 							<i class="fas fa-chevron-right fa-icon"></i>
 
 						</a>
@@ -737,6 +737,7 @@
 			<div class="col-lg-6">
 				<div class="contact-form-card-pr contact-block-btm">
 					<div class="form-block">
+					{!! NoCaptcha::renderJs() !!}
 						<form action="{{route('leads')}}" method="post" id="contactForm" data-toggle="validator" class="shake">
 							@csrf
 							<div class="row">
@@ -780,6 +781,9 @@
 							<div class="form-group">
 								<textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
 								<div class="help-block with-errors"></div>
+							</div>
+							<div class="form-group mb-2 captchaContainer1" id="captchaContainer" style="display: none;">
+								{!! NoCaptcha::display() !!}
 							</div>
 							<button type="submit" name="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit <i class="fas fa-chevron-right fa-icon"></i></button>
 							<div id="msgSubmit" class="h3 text-center hidden"></div>

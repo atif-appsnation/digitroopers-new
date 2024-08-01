@@ -1839,7 +1839,7 @@
     }
 }
 
-@media only screen and (min-width:1600px)  {
+@media only screen and (min-width:1600px) and (max-width:1919px)  {
     
     .slider-container {
 		margin-top: 0px;
@@ -1914,4 +1914,37 @@
     .reviews-card {
         height: 534px;
     }
+}
+
+/* @media only screen and (min-width: 1440px) {
+    .breadcrumb-area {
+        height: 100vh;
+    }
+} */
+
+
+@media only screen and (min-width:1920px) {
+
+	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1600px;
+    }
+
+	.shapes-travel-agency h2, .color-travel-agency h2, .type-faces-travel-agency h2, .mockups-travel-agency h2 {
+		font-size: 80px;
+		line-height: 100px;
+	}
+
+	.travel-app-visuals-2, .travel-app-visuals-4 {
+        margin-top: 200px;
+    }
+
+	.logo-creation-real-estate h2, .color-real-estate h2, .type-faces-real-estate h2, .mockups-real-estate h2 {
+		font-size: 80px;
+		line-height: 100px;
+	}
+
+	.travel-app-visuals-2, .travel-app-visuals-4 {
+        margin-top: 200px;
+    }
+
 }
