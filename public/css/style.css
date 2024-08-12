@@ -3,6 +3,7 @@
     --blue-color: #0859d3;
     --brown-color: #35312f;
     --golden-color: #a68b4f;
+    --black-color: #202020;
     --red-color: #EA0009;
     --orange-color: #F15A24;
     --green-color: #A5CB39;
@@ -9088,7 +9089,7 @@ html .mt15 {
 /* Travel Agency */
 
 .travel-agency-banner {
-    background-image: url(../images/case-studies/travel-agency/header-background.webp);
+    background-image: url(../images/case-studies/travel-agency/travel-agency-header-background.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -9133,7 +9134,7 @@ html .mt15 {
 }
 
 .visuals-travel-background {
-    background-image: url(../images/case-studies/travel-agency/visuals-background.webp);
+    background-image: url(../images/case-studies/travel-agency/travel-agency-visuals-background.webp);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9142,7 +9143,7 @@ html .mt15 {
 /* Real Estate */
 
 .real-estate-banner {
-    background-image: url(../images/case-studies/real-estate/header-background.webp);
+    background-image: url(../images/case-studies/real-estate/real-etstate-header-background.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -9182,7 +9183,63 @@ html .mt15 {
 }
 
 .visuals-real-estate-background {
-    background-image: url(../images/case-studies/real-estate/visuals-background.webp);
+    background-image: url(../images/case-studies/real-estate/real-estate-visuals-background.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Gym */
+
+.gym-banner {
+    background-image: url(../images/case-studies/gym/gym-header-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.black-favicon {
+    width: 100%;
+}
+
+.black-favicon img {
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.orange-favicon {
+    background: var(--black-color);
+    width: 100%;
+}
+
+.orange-favicon img {
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.left-border {
+    border-left: 3px solid var(--black-color);
+}
+
+.black-logo img {
+    display: block;
+    margin: 0px auto;
+}
+
+.logo-creation-gym h2, .color-gym h2, .type-faces-gym h2, .mockups-gym h2 {
+    color: var(--black-color);
+}
+
+.visuals-gym-background {
+    background-image: url(../images/case-studies/gym/gym-visual-background-01.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mockup-gym-background {
+    background-image: url(../images/case-studies/gym/gym-visual-background-02.webp);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

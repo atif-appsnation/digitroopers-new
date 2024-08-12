@@ -1943,7 +1943,16 @@
 		line-height: 100px;
 	}
 
-	.travel-app-visuals-2, .travel-app-visuals-4 {
+	.real-estate-app-visuals-2 {
+        margin-top: 200px;
+    }
+
+	.logo-creation-gym h2, .color-gym h2, .type-faces-gym h2, .mockups-gym h2 {
+		font-size: 80px;
+		line-height: 100px;
+	}
+
+	.gym-app-visuals-2, .gym-app-visuals-4 {
         margin-top: 200px;
     }
 
