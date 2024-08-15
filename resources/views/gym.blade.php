@@ -19,9 +19,9 @@
 <section class="case-study">
 	<div class="row">
 		<div class="col-lg-6 p-0 my-auto black-logo">
-			<img src="{{asset('images/case-studies/gym/gym-black-logo.webp')}}" alt="Gym Logo" class="img-fluid no-shadow w-25" />
+			<img src="{{asset('images/case-studies/gym/gym-black-logo.webp')}}" alt="Gym Logo" class="img-fluid no-shadow" />
 		</div>
-		<div class="col-lg-6 p-0 left-border">
+		<div class="col-lg-6 p-0 gym-left-border">
 			<div class="black-favicon">
 				<img src="{{asset('images/case-studies/gym/gym-black-favicon.webp')}}" alt="Gym Favicon" class="img-fluid no-shadow" />
 			</div>
@@ -187,16 +187,16 @@
 		<div class="container">
 			<div class="row mt-4 mt-lg-0">
 				<div class="col-12 col-md-3">
-					<img src="{{asset('images/case-studies/gym/gym-app-visuals-1.webp')}}" alt="Travel App Visuals" class="img-fluid gym-app-visuals-1">
+					<img src="{{asset('images/case-studies/gym/gym-app-visuals-1.webp')}}" alt="Gym App Visuals" class="img-fluid gym-app-visuals-1">
 				</div>
 				<div class="col-12 col-md-3">
-					<img src="{{asset('images/case-studies/gym/gym-app-visuals-2.webp')}}" alt="Travel App Visuals" class="img-fluid gym-app-visuals-2">
+					<img src="{{asset('images/case-studies/gym/gym-app-visuals-2.webp')}}" alt="Gym App Visuals" class="img-fluid gym-app-visuals-2">
 				</div>
 				<div class="col-12 col-md-3">
-					<img src="{{asset('images/case-studies/gym/gym-app-visuals-3.webp')}}" alt="Travel App Visuals" class="img-fluid gym-app-visuals-3">
+					<img src="{{asset('images/case-studies/gym/gym-app-visuals-3.webp')}}" alt="Gym App Visuals" class="img-fluid gym-app-visuals-3">
 				</div>
 				<div class="col-12 col-md-3">
-					<img src="{{asset('images/case-studies/gym/gym-app-visuals-4.webp')}}" alt="Travel App Visuals" class="img-fluid gym-app-visuals-4">
+					<img src="{{asset('images/case-studies/gym/gym-app-visuals-4.webp')}}" alt="Gym App Visuals" class="img-fluid gym-app-visuals-4">
 				</div>
 			</div>
 		</div>
@@ -218,10 +218,10 @@
 		<div class="container">
 			<div class="row mt-4 mt-lg-0">
 				<div class="col-12 col-md-6 my-auto">
-					<img src="{{asset('images/case-studies/gym/gym-web-visuals-1.webp')}}" alt="Travel Web Visuals" class="img-fluid gym-app-visuals-1 mx-auto d-block">
+					<img src="{{asset('images/case-studies/gym/gym-web-visuals-1.webp')}}" alt="Gym Web Visuals" class="img-fluid gym-app-visuals-1 mx-auto d-block">
 				</div>
 				<div class="col-12 col-md-6">
-					<img src="{{asset('images/case-studies/gym/gym-web-visuals-2.webp')}}" alt="Travel Web Visuals" class="img-fluid gym-app-visuals-2 mx-auto d-block">
+					<img src="{{asset('images/case-studies/gym/gym-web-visuals-2.webp')}}" alt="Gym Web Visuals" class="img-fluid gym-app-visuals-2 mx-auto d-block">
 				</div>
 			</div>
 		</div>

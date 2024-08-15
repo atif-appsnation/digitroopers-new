@@ -21,7 +21,7 @@
 		<div class="col-lg-6 p-0 my-auto blue-logo">
 			<img src="{{asset('images/case-studies/travel-agency/travel-agency-blue-logo.webp')}}" alt="Travel Agency Logo" class="img-fluid no-shadow w-50" />
 		</div>
-		<div class="col-lg-6 p-0 left-border">
+		<div class="col-lg-6 p-0 travel-agency-left-border">
 			<div class="blue-favicon">
 				<img src="{{asset('images/case-studies/travel-agency/travel-agency-blue-favicon.webp')}}" alt="Travel Agency Favicon" class="img-fluid no-shadow" />
 			</div>

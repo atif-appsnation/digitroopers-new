@@ -19,13 +19,13 @@
 <section class="case-study">
 	<div class="row">
 		<div class="col-lg-6 p-0 my-auto black-logo">
-			<img src="{{asset('images/case-studies/real-estate/real-estate-black-logo.webp')}}" alt="Real Estate Logo" class="img-fluid no-shadow w-25" />
+			<img src="{{asset('images/case-studies/real-estate/real-estate-black-logo.webp')}}" alt="Real Estate Logo" class="img-fluid no-shadow" />
 		</div>
-		<div class="col-lg-6 p-0 left-border">
+		<div class="col-lg-6 p-0 real-estate-left-border">
 			<div class="golden-favicon">
 				<img src="{{asset('images/case-studies/real-estate/real-estate-golden-favicon.webp')}}" alt="Real Estate Favicon" class="img-fluid no-shadow" />
 			</div>
-			<div class="white-favicon">
+			<div class="real-estate-white-favicon">
 				<img src="{{asset('images/case-studies/real-estate/real-estate-white-favicon.webp')}}" alt="Real Estate Favicon" class="img-fluid no-shadow" />
 			</div>
 			

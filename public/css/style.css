@@ -9092,6 +9092,7 @@ html .mt15 {
     background-image: url(../images/case-studies/travel-agency/travel-agency-header-background.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .blue-favicon {
@@ -9115,7 +9116,7 @@ html .mt15 {
     padding: 50px 0px;
 }
 
-.left-border {
+.travel-agency-left-border {
     border-left: 3px solid #3832A0;
 }
 
@@ -9143,9 +9144,10 @@ html .mt15 {
 /* Real Estate */
 
 .real-estate-banner {
-    background-image: url(../images/case-studies/real-estate/real-etstate-header-background.webp);
+    background-image: url(../images/case-studies/real-estate/real-estate-header-background.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .golden-favicon {
@@ -9158,18 +9160,18 @@ html .mt15 {
     padding: 50px 0px;
 }
 
-.white-favicon {
+.real-estate-white-favicon {
     background: var(--brown-color);
     width: 100%;
 }
 
-.white-favicon img {
+.real-estate-white-favicon img {
     display: block;
     margin: 0px auto;
     padding: 50px 0px;
 }
 
-.left-border {
+.real-estate-left-border {
     border-left: 3px solid var(--brown-color);
 }
 
@@ -9195,6 +9197,7 @@ html .mt15 {
     background-image: url(../images/case-studies/gym/gym-header-background.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .black-favicon {
@@ -9218,7 +9221,7 @@ html .mt15 {
     padding: 50px 0px;
 }
 
-.left-border {
+.gym-left-border {
     border-left: 3px solid var(--black-color);
 }
 
@@ -9240,6 +9243,63 @@ html .mt15 {
 
 .mockup-gym-background {
     background-image: url(../images/case-studies/gym/gym-visual-background-02.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Loyalty */
+
+.loyalty-banner {
+    background-image: url(../images/case-studies/loyalty/loyalty-header-background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.red-favicon {
+    width: 100%;
+}
+
+.red-favicon img {
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.loyalty-white-favicon {
+    background: var(--red-color);
+    width: 100%;
+}
+
+.loyalty-white-favicon img {
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+.loyalty-left-border {
+    border-left: 3px solid var(--red-color);
+}
+
+.black-logo img {
+    display: block;
+    margin: 0px auto;
+}
+
+.logo-creation-loyalty h2, .color-loyalty h2, .type-faces-loyalty h2, .mockups-loyalty h2 {
+    color: var(--black-color);
+}
+
+.visuals-loyalty-background {
+    background-image: url(../images/case-studies/loyalty/loyalty-background.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mockup-loyalty-background {
+    background-image: url(../images/case-studies/loyalty/loyalty-background.webp);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

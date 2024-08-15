@@ -1956,4 +1956,13 @@
         margin-top: 200px;
     }
 
+	.logo-creation-loyalty h2, .color-loyalty h2, .type-faces-loyalty h2, .mockups-loyalty h2 {
+		font-size: 80px;
+		line-height: 100px;
+	}
+
+	.loyalty-app-visuals-2, .loyalty-app-visuals-4 {
+        margin-top: 200px;
+    }
+
 }

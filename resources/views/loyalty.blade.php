@@ -2,257 +2,246 @@
 @section('content')
 
 <!--Breadcrumb Area-->
-<section class="breadcrumb-area banner-flick">
+<section class="breadcrumb-area loyalty-banner">
 	<div class="text-block">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 v-center">
-					<!-- <div class="bread-inner">
-						<div class="bread-menu">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="case-study.html">Case Study</a></li>
-								<li><a href="#">Flick Soccer</a></li>
-							</ul>
-						</div>
-						<div class="bread-title">
-							<h2>Flick Soccer</h2>
-						</div>
-					</div> -->
+					<img src="{{asset('images/case-studies/loyalty/loyalty-white-logo.webp')}}" class="img-fluid" alt="Loyalty-Logo">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 <!--End Breadcrumb Area-->
+
 <!--Start Case Study About-->
-<section class="case-study py-5">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="image-block upset">
-					<img src="images/games/1st.webp" alt="case study" class="img-fluid no-shadow" />
-				</div>
+<section class="case-study">
+	<div class="row">
+		<div class="col-lg-6 p-0 my-auto black-logo">
+			<img src="{{asset('images/case-studies/loyalty/loyalty-black-logo.webp')}}" alt="Loyalty-Logo" class="img-fluid no-shadow w-50" />
+		</div>
+		<div class="col-lg-6 p-0 loyalty-left-border">
+			<div class="red-favicon">
+				<img src="{{asset('images/case-studies/loyalty/loyalty-red-favicon.webp')}}" alt="Loyalty-Favicon" class="img-fluid no-shadow" />
 			</div>
-			<div class="col-lg-6 block-1 v-center">
-				<div class="common-heading inner-heading text-l pl25">
-					<span>About The Project</span>
-					<h2>On-Demand - Game Application</h2>
-					<p>The task our team got was creating a bright and Attractive interface of a Soccer game for mobiles.</p>
-					<p>The functionality of the game lied on kicking the ball in the right direction for more points, you can buy t-shirts, balls from those points </p>
-					<ul class="list">
-						<li>Beautiful design and animation were considered among the core features supporting user retention.</li>
-					</ul>
-				</div>
-				<div class="project-platform mt60 pl25">
-					<div class="project-platform-used -shadow">
-						<a href="#"><img src="images/icons/android.svg" alt="android"></a>
-					</div>
-					<div class="project-platform-used -shadow">
-						<a href="#"><img src="images/icons/apple.svg" alt="apple"></a>
-					</div>
-					<div class="project-platform-used -shadow">
-						<a href="#"><img src="images/icons/windows.svg" alt="windows"></a>
-					</div>
-				</div>
+			<div class="loyalty-white-favicon">
+				<img src="{{asset('images/case-studies/loyalty/loyalty-white-favicon.webp')}}" alt="Loyalty-Favicon" class="img-fluid no-shadow" />
 			</div>
+			
 		</div>
 	</div>
 </section>
 <!--End Case Study About-->
-<section class="case-study py-5 bg-gradient6 deep-dark">
+
+<!--Start Shapes-->
+<section class="logo-creation-loyalty py-5">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 text-center">
-				<div class="common-heading">
-					<span>Application Features</span>
-					<h2 class="mb30">As per the client's need, Digitroopers has developed.</h2>
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<h2 class="mb30">Logo Creation</h2>
+					<img src="{{asset('images/case-studies/loyalty/loyalty-logo-creation.webp')}}" alt="Loyalty-Logo Creation" class="img-fluid no-shadow mt-5" />
 				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6">
-				<ul class="list-style-">
-					<li>Customer satisfaction - rating .</li>
-					<li>Mobile-Friendly.</li>
-				</ul>
-			</div>
-			<div class="col-lg-6">
-				<ul class="list-style-">
-					<li>Responsive Design.</li>
-					<li>User-Friendly.</li>
-				</ul>
 			</div>
 		</div>
 	</div>
 </section>
-<!--Start Project Challenges-->
-<section class="challanges py-5">
+<!--End Shapes-->
+
+<!--Start Color Pallate-->
+<section class="color-loyalty py-5">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-sm-6 my-auto">
-				<h2 class="mt20 mb20">Challenges</h2>
-				<p>We quickly got to work on Research & Discovery and laying the foundation of a branding and marketing strategy that would carry the project through. Little did we know how much their presence and capability would grow in the next two years.</p>
-			</div>
-			<div class="col-lg-6 col-sm-6">
-				<div class="project-view m-mt30">
-					<img src="images/games/2nd.webp" alt="case study" class="img-fluid" />
+			<div class="col-12">
+				<div class="common-heading text-center">
+					<h2 class="mb30">Color Pallate</h2>
 				</div>
+			</div>
+			<div class="col-lg-6 mt-5 text-center">
+				<h4 class="text-center">Tints</h4>
+				<img src="{{asset('images/case-studies/loyalty/loyalty-tints.webp')}}" alt="Tints" class="img-fluid">
+			</div>
+			<div class="col-lg-6 mt-5 text-center">
+			<h4 class="text-center">Shades</h4>
+				<img src="{{asset('images/case-studies/loyalty/loyalty-shades.webp')}}" alt="Shades" class="img-fluid">
 			</div>
 		</div>
 	</div>
 </section>
-<!--End Project Challenges-->
-<!--Start Solutions-->
-<section class="case-study py-5 bg-gradient5 deep-dark">
+<!--End Color Pallate-->
+
+<!--Start Type Faces-->
+<section class="type-faces-loyalty py-5">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 text-center">
-				<div class="common-heading inner-heading">
-					  <span>Solutions</span>
-					<h2>How We Work</h2>
-					<p>In our process we always focus on quality, testing and want to deliver good software on time. We use the best software development practices in everything we do!</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="card-nx row">
-					<div class="col-lg-3 col-md-3 col-sm-6 col-6 mt30">
-						<div class="icon-card-"> <img src="images/icons/logo-and-branding.svg" alt="case study" class="img-fluid">
-							<h4>UI/UX Design</h4>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-6 mt30">
-						<div class="icon-card-"> <img src="images/icons/branding.svg" alt="case study" class="img-fluid">
-							<h4>Front-end Dev</h4>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-6 mt30">
-						<div class="icon-card-"> <img src="images/icons/back.svg" alt="case study" class="img-fluid">
-							<h4>Back-end Dev</h4>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-6 mt30">
-						<div class="icon-card-"> <img src="images/icons/seo.svg" alt="case study" class="img-fluid">
-							<h4>SEO Optimization</h4>
-						</div>
-					</div>
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<h2 class="mb30">Type Faces</h2>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<img src="{{asset('images/case-studies/loyalty/loyalty-type-faces.webp')}}" alt="Loyalty Type Faces" class="img-fluid no-shadow mt-5 w-100" />
 </section>
-<!--End Solutions-->
-<div class="case-study py-5">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="project-screens owl-carousel">
-					<div class="screen-splits"> <img src="images/games/1.webp" alt="case study" class="img-fluid" /></div>
-					<div class="screen-splits"> <img src="images/games/2.webp" alt="case study" class="img-fluid" /></div>
-					<div class="screen-splits"> <img src="images/games/3.webp" alt="case study" class="img-fluid" /></div>
-					<div class="screen-splits"> <img src="images/games/4.webp" alt="case study" class="img-fluid" /></div>
-					<div class="screen-splits"> <img src="images/games/5.webp" alt="case study" class="img-fluid" /></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!--Start Result-->
-<section class="case-study py-5 deep-dark">
+<!--End Type Faces-->
+
+<!--Start Mockups-->
+<section class="mockups-loyalty">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-8 text-center">
-				<div class="common-heading">
-					<h2 class="mb30">See The Result</h2>
-				</div>
-			</div>
-		</div>
-		<div class="row in-stats card-stats">
-			<div class="col-lg-3 col-sm-6 col-6 mt30">
-				<div class="statistics">
-					<div class="statnumb"> <span class="counter">20</span><span>%</span>
-						<p>ROI Increase</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 col-6 mt30">
-				<div class="statistics">
-					<div class="statnumb counter-number"> <span class="counter">40</span><span>%</span>
-						<p>Traffic Increase</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 col-6 mt30">
-				<div class="statistics">
-					<div class="statnumb counter-number"> <span class="counter">30</span><span>%</span>
-						<p>Order Increase</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-sm-6 col-6 mt30">
-				<div class="statistics">
-					<div class="statnumb counter-number"> <span class="counter">60</span><span>%</span>
-						<p>Order Increase</p>
-					</div>
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<h2 class="mb30">Mockups</h2>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!--End Result-->
-<!--Start reveiws-->
-<section class="reviews-block py-5">
+
+<section class="logo-design-loyalty">
 	<div class="container">
-		<div class="row justify-content-center text-center">
-			<div class="col-lg-8">
-				<div class="common-heading ptag">
-					<span>Reviews</span>
-					<h2>Client Testimonials</h2>
-					<p class="mb30">Check our customers success stories.</p>
+		<div class="row justify-content-center">
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-logo-design.webp')}}" alt="Loyalty Mockup Design" class="img-fluid no-shadow mt-5" />
 				</div>
 			</div>
 		</div>
-		<div class="row">
-
-			@foreach($testimonial as $k=>$items)
-			@if($k < 3) <div class="col-md-4 mt30">
-				<div class="reviews-card pr-shadow">
-					<div class="row v-center">
-						<div class="col"> <span class="revbx-lr"><i class="fas fa-quote-left"></i></span> </div>
-					</div>
-					<div class="review-text">
-						<p>{{$items['title']}}</p>
-					</div>
-					<div class="-client-details-">
-
-						<div class="reviewer-text">
-							<h4>{{$items['name']}}</h4>
-							<p>{{$items['location']}}</p>
-							<div class="star-rate">
-								<ul>
-									<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a>
-									</li>
-									<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a>
-									</li>
-									<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a>
-									</li>
-									<li> <a href="javascript:void(0)" class="chked"><i class="fas fa-star" aria-hidden="true"></i></a>
-									</li>
-									<li> <a href="javascript:void(0)"><i class="fas fa-star" aria-hidden="true"></i></a> </li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-		</div>
-		@endif
-		@endforeach
-
-
 	</div>
+
+	<img src="{{asset('images/case-studies/loyalty/loyalty-logo-designs.webp')}}" alt="Loyalty-Mockup Design" class="img-fluid no-shadow mt-5 w-100" />
+</section>
+
+<section class="flyer-design-loyalty">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-flyer-design.webp')}}" alt="Loyalty-Flyer Design" class="img-fluid no-shadow mt-5" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img src="{{asset('images/case-studies/loyalty/loyalty-flyer-designs.webp')}}" alt="Loyalty-Flyer Design" class="img-fluid no-shadow mt-5 w-100" />
+</section>
+
+<section class="stationary-design-loyalty">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-stationary-design.webp')}}" alt="Loyalty-Stationary Design" class="img-fluid no-shadow mt-5" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img src="{{asset('images/case-studies/loyalty/loyalty-stationary-designs.webp')}}" alt="Loyalty-Stationary Design" class="img-fluid no-shadow mt-5 w-100" />
+</section>
+
+<section class="creative-design-loyalty">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-creative-design.webp')}}" alt="Loyalty-Creative Design" class="img-fluid no-shadow mt-5" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="visuals-loyalty-background pt50 pb50 mt-5">
+		<div class="container">
+			<div class="row mt-4">
+				<div class="col-12 col-md-6 my-lg-auto">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-creative-designs-01.webp')}}" alt="Loyalty-Creative Visuals" class="img-fluid loyalty-creative-visuals-1">
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-creative-designs-02.webp')}}" alt="Loyalty-Creative Visuals" class="img-fluid loyalty-creative-visuals-2">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-creative-designs-03.webp')}}" alt="Loyalty-Creative Visuals" class="img-fluid loyalty-creative-visuals-3 mt-5">
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
-<!--End reviews-->
+
+<section class="app-design-loyalty">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-app-design.webp')}}" alt="Loyalty-App Design" class="img-fluid no-shadow mt-5" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="visuals-loyalty-background pt50 pb50 mt-5">
+		<div class="container">
+			<div class="row mt-4 mt-lg-0">
+				<div class="col-12 col-md-4">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-app-designs-01.webp')}}" alt="Travel App Visuals" class="img-fluid loyalty-app-visuals-1">
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-app-designs-02.webp')}}" alt="Travel App Visuals" class="img-fluid loyalty-app-visuals-2">
+				</div>
+				<div class="col-12 col-md-4">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-app-designs-03.webp')}}" alt="Travel App Visuals" class="img-fluid loyalty-app-visuals-3">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="website-design-loyalty">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-website-design.webp')}}" alt="Loyalty Website Design" class="img-fluid no-shadow mt-5" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="visuals-loyalty-background pt50 pb50 mt-5">
+		<div class="container">
+			<div class="row mt-4 mt-lg-0">
+				<div class="col-12 col-md-6 my-auto">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-website-designs-01.webp')}}" alt="Loyalty Web Visuals" class="img-fluid loyalty-web-visuals-1 mx-auto d-block">
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-website-designs-02.webp')}}" alt="Loyalty Web Visuals" class="img-fluid loyalty-web-visuals-2 mx-auto d-block">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="mockup-design-loyalty">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 text-center">
+				<div class="common-heading text-center">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-mockup-design.webp')}}" alt="Loyalty Mockup Design" class="img-fluid no-shadow mt-5" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mockup-loyalty-background pt50 pb50 mt-5">
+		<div class="container">
+			<div class="row mt-4">
+				<div class="col-12">
+					<img src="{{asset('images/case-studies/loyalty/loyalty-mockup-designs.webp')}}" alt="Loyalty Mockup Design" class="img-fluid d-block mx-auto">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--End Mockups-->
+
 @endsection
