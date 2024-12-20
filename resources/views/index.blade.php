@@ -1,14 +1,42 @@
 @extends('app.main')
 @section('content')
 
+<section class="hero-slider hero-style" id="hero-slider">
+	<video playsinline autoplay muted loop width="100%" height="100%">
+		<source src="video/banner.mp4" type="video/mp4">
+	</video>
+	<div class="hero-main-rp container main-ban hidden">
+		<div class="row align-items-center">
+			<div class="col-sm-12 col-md-12 v-center" data-rellax-speed="-3">
+				<div class="hero-heading-sec2 niwax" data-rellax-speed="3">
+					<h1 class="wow fadeIn cd-headline clip">Your Leading
+						<span class="cd-words-wrapper">
+							<b class="is-visible">Designing</b>
+							<b>Web Development</b>
+							<b>Social Media Marketing</b>
+							<b>SEO Management</b>
+							<b>Email Marketing</b>
+							<b>PPC Management Services</b>
+							<b>E-Commerce Project Management</b>
+						</span>
+					Partner</h1>
+					<p class="wow fadeIn">DigiTroopers offers top-notch digital marketing services tailored to drive results and elevate your business.</p>
+					<a href="{{url('/contact-us')}}" class="btn-main button-arounder lnk">Let's Work Together
+						<i class="fas fa-chevron-right fa-icon"></i>
+						<span class="circle"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!--Start Hero-->
-<section class="hero-slider hero-style">
+<!-- <section class="hero-slider hero-style">
 	<div class="swiper-container">
-		<!-- start swiper-wrapper -->
 		<div class="swiper-wrapper">
 
 			@foreach($mainslider as $items)
-			<!-- <h1>{{$items['image']}}</h1> -->
 			<div class="swiper-slide">
 				<div class="slide-inner slide-bg-image" data-background="images/banner/slider.webp">
 					<div class="container slider-container">
@@ -45,11 +73,125 @@
 		<div class="swiper-button-next"></div>
 		<div class="swiper-button-prev"></div>
 	</div>
-</section>
+</section> -->
 <!--End Hero-->
 
+<!--Start Testinomial-->
+<section class="testimonials-section-app pt100 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- <div class="common-heading text-center">
+					<h2 class="text-white">What <span> Our Clients</span> Say About <span>AppsNation</span></h2>
+                    <h5 class="text-white">Over 1200+ Satisfied Clients and Growing</h5>
+                </div> -->
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="card h-100">
+							<div class="card-body">
+								<a href="javascript:void(0)">
+									<img src="images/reviews/clutch.webp" class="img-fluid d-block mx-auto" alt="Clutch">
+									<img src="images/reviews/star.webp" class="img-fluid d-block mx-auto" alt="Star">
+									<p class="text-center pt-2 text-dark">Recognized as Top in Digital Marketing by Clutch</p>
+								</a>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+						<div class="card h-100">
+							<div class="card-body">
+								<a href="javascript:void(0)">
+									<img src="images/reviews/bark.webp" class="img-fluid d-block mx-auto" alt="Bark">
+									<img src="images/reviews/star.webp" class="img-fluid d-block mx-auto" alt="Star">
+									<p class="text-center pt-2 text-dark">Recognized as Top in Digital Marketing by Bark</p>
+								</a>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-xl-0">
+						<div class="card h-100">
+							<div class="card-body">
+								<a href="javascript:void(0)">
+									<img src="images/reviews/designrush.webp" class="img-fluid d-block mx-auto" alt="DesignRush">
+									<img src="images/reviews/star.webp" class="img-fluid d-block mx-auto" alt="Star">
+									<p class="text-center pt-2 text-dark">Recognized as Top in Digital Marketing by DesignRush</p>
+								</a>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-xl-0">
+						<div class="card h-100">
+							<div class="card-body">
+								<a href="javascript:void(0)">
+									<img src="images/reviews/goodfirms.webp" class="img-fluid d-block mx-auto" alt="GoodFirms">
+									<img src="images/reviews/star.webp" class="img-fluid d-block mx-auto" alt="Star">
+									<p class="text-center pt-2 text-dark">Recognized as Top in Digital Marketing by GoodFirms</p>
+								</a>
+							</div>
+						</div>
+                    </div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+						<div class="card h-100">
+							<div class="card-body">
+								<a href="javascript:void(0)">
+									<img src="images/reviews/trustpilot.webp" class="img-fluid d-block mx-auto" alt="Trustpilot">
+									<img src="images/reviews/star.webp" class="img-fluid d-block mx-auto" alt="Star">
+									<p class="text-center pt-2 text-dark">Recognized as Top in Digital Marketing by Trustpilot</p>
+								</a>
+							</div>
+						</div>
+                    </div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+						<div class="card h-100">
+							<div class="card-body">
+								<a href="javascript:void(0)">
+									<img src="images/reviews/sortlist.webp" class="img-fluid d-block mx-auto" alt="Sortlist">
+									<img src="images/reviews/star.webp" class="img-fluid d-block mx-auto" alt="Star">
+									<p class="text-center pt-2 text-dark">Recognized as Top in Digital Marketing by Sortlist</p>
+								</a>
+							</div>
+						</div>
+                    </div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+						<div class="card h-100">
+							<div class="card-body">
+								<a href="javascript:void(0)">
+									<img src="images/reviews/upcity.webp" class="img-fluid d-block mx-auto" alt="UpCity">
+									<img src="images/reviews/star.webp" class="img-fluid d-block mx-auto" alt="Star">
+									<p class="text-center pt-2 text-dark">Recognized as Top in Digital Marketing by UpCity</p>
+								</a>
+							</div>
+						</div>
+                    </div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3">
+						<div class="card h-100">
+							<div class="card-body">
+								<a href="javascript:void(0)">
+									<img src="images/reviews/sitejabber.webp" class="img-fluid d-block mx-auto" alt="SiteJabber">
+									<img src="images/reviews/star.webp" class="img-fluid d-block mx-auto" alt="Star">
+									<p class="text-center pt-2 text-dark">Recognized as Top in Digital Marketing by SiteJabber</p>
+								</a>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-12 fadeIn my-auto text-center">
+                <div class="review-title-ref mt40">
+                    <a href="{{url('/testimonials')}}" class="niwax-btn button-arounder btn wow fadeIn mt-3 py-2 px-3">Read More Reviews <i class="fas fa-chevron-right fa-ani"></i></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+<!--End Testinomial-->
+
 <!--Start Badges-->
-<section class="badges-section pad-tb bg-gradient2 py-5">
+<!-- <section class="badges-section pad-tb bg-gradient2 py-5">
 	<div class="container">
 		<div class="row justify-content-center text-center">
 			<div class="col-lg-8">
@@ -96,7 +238,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <!--End Badges-->
 
 <!--Start About Us-->

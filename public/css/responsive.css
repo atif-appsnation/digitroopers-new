@@ -1925,6 +1925,11 @@
 
 @media only screen and (min-width:1920px) {
 
+	.hero-main-rp {
+		padding: 280px 0 100px;
+		left: 10%;
+	}
+
 	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1600px;
     }

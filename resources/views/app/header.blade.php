@@ -12,40 +12,46 @@
 	{!! htmlspecialchars_decode($item['tags']) !!}
 	@endforeach
 
-	
-
 	<!--<title>Digital Marketing Services with Guaranteed Results | DigiTroopers</title>-->
 	<!--<meta name="description" content="Digital Marketing Agency who offers Digital Marketing Services like Web Development, Graphic Designing, Social Media Marketing, SEO and Google Ads Services.">-->
 	<!--<meta name="keywords" content="Graphic Designing Companies, SEO Marketing, SMM Service, Email Campaign Service, Ecommerce Website Management, PPC Marketing Company">-->
 	<!--<meta name="author" content="digitroopers">-->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!--<meta name="theme-color" content="#2e2a8f"> -->
-	<!--website-favicon-->
 	<link href="{{asset('images/favicon.webp')}}" rel="icon">
-	<!--plugin-css-->
 	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
 	<link href="{{asset('css/plugin.min.css')}}" rel="stylesheet">
 	<link href="{{asset('css/swiper.min.css')}}" rel="stylesheet">
 	<link href="{{asset('css/all.min.css')}}" rel="stylesheet">
 	<link href="{{asset('css/fonts.css')}}" rel="stylesheet">
-
-	<!-- corousel-->
 	<link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
 	<link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
 	<link rel="stylesheet" href="{{asset('css/carousel.css')}}">
-	<!-- xxxx -->
-	<!-- template-style-->
 	<link href="{{asset('css/style.css')}}" rel="stylesheet">
 	<link href="{{asset('css/responsive.css')}}" rel="stylesheet">
 	<link href="{{asset('css/darkmode.css')}}" rel="stylesheet">
 	<link href="{{asset('css/gdpr-cookie.css')}}" rel="stylesheet">
-
-
-	<!-- magnific cdn for video -->
+	<link href="{{asset('css/magnific-popup.min.css')}}" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
 
-	<!-- xxxxx -->
+	<!-- Meta Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '596119242764284');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=596119242764284&ev=PageView&noscript=1" />
+	</noscript>
+	<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
@@ -288,7 +294,7 @@
 							<a href="{{url('/package')}}" class="menu-links first-menu">Packages</a>
 						</li>
 						<li class="sbmenu">
-							<a href="{{url('/insights')}}" class="menu-links first-menu">Insights</a>
+							<a href="https://blog.digitroopers.com/" class="menu-links first-menu">Insights</a>
 						</li>
 						<li class="sbmenu">
 							<a href="{{url('/contactus')}}" class="menu-links first-menu">Contact Us</a>
