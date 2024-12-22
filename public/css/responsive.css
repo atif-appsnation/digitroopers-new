@@ -61,9 +61,9 @@
 		height: 780px;
 	}
 
-	.hero-main-rp {
+	/* .hero-main-rp {
 		padding: 0 30px 0 30px;
-	}
+	} */
 
 	.hero-section {
 		padding-top: 100px;
@@ -1468,6 +1468,11 @@
 /* Custom */
 
 @media only screen and (max-width: 767px) {
+
+	.hero-main-rp {
+		padding: 180px 30px 30px;
+		left: 0%;
+	}
     
     .slider-container {
 		margin-top: 0px;
@@ -1559,11 +1564,15 @@
 	}
 }
 
-
 @media only screen and (min-width:768px) and (max-width:1023px) {
     
 	.slider-container {
 		margin-top: 0px;
+	}
+
+	.hero-main-rp {
+		padding: 300px 30px 80px;
+		left: 0%;
 	}
 	
 	/*.hero-slider {*/
@@ -1679,6 +1688,11 @@
 }
 
 @media only screen and (min-width:1024px) and (max-width:1439px) {
+
+	.hero-main-rp {
+		padding: 250px 60px 80px;
+		left: 0%;
+	}
     
 	.slider-container {
 		margin-top: 0px;
@@ -1763,6 +1777,11 @@
 }
 
 @media only screen and (min-width:1440px) and (max-width: 1599px) {
+
+	.hero-main-rp {
+		padding: 200px 0px 100px;
+		left: 5%;
+	}
     
     .slider-container {
 		margin-top: 0px;
@@ -1840,6 +1859,11 @@
 }
 
 @media only screen and (min-width:1600px) and (max-width:1919px)  {
+
+	.hero-main-rp {
+		padding: 150px 0px 100px;
+		left: 10%;
+	}
     
     .slider-container {
 		margin-top: 0px;
