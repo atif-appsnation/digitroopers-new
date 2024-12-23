@@ -439,7 +439,6 @@
 				<div class="common-heading text-l">
 					<span>Who We Are</span>
 					<h2 class="mb20"><span class="text-second text-bold">Top Ranked</span> Internet Marketing Company</h2>
-
 					<p>Being a Top-Notch digital marketing agency we offer all types of digital marketing services. Our Digital Marketing Specialists consistently deliver outstanding results for our clients.DigiTroopers is a world-class Internet Marketing Company for the online marketing and e-commerce needs of well-established brands, small Enterprises, as well as early age startups.Through our services, you can make digital Technologies to deliver exceptional results</p>
 					<div class="itm-media-object mt40 tilt-3d">
 						<div class="media">
@@ -463,6 +462,9 @@
 								<p>On-time projects will be delivered within a streamlined project schedule. The project deliverables will always be on time</p>
 							</div>
 						</div>
+						<div class="media mt20">
+							<a href="pdf/company-profile.pdf" class="btn-main bg-btn lnk" target="_blank">Download Company Profile <i class="fas fa-chevron-right fa-icon"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -476,8 +478,6 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-12">
-								
-								
 								<div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
 									<iframe class="embed-responsive-item" preload="none" width="854" height="480" src="https://www.youtube.com/embed/PMUow6i-DLE?autoplay=1" frameborder="0"  encrypted-media allowfullscreen></iframe>
 								</div>
