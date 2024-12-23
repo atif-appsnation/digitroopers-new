@@ -17,7 +17,7 @@
 							<b>SEO Management</b>
 							<b>Email Marketing</b>
 							<b>PPC Management Services</b>
-							<b>E-Commerce Project Management</b>
+							<b>E-Commerce Project</b>
 						</span>
 					Partner</h1>
 					<p class="wow fadeIn">DigiTroopers offers top-notch digital marketing services tailored to drive results and elevate your business.</p>
@@ -101,7 +101,7 @@
 							</div>
 						</div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-0">
 						<div class="card h-100">
 							<div class="card-body">
 								<a href="javascript:void(0)">

@@ -1470,8 +1470,13 @@
 @media only screen and (max-width: 767px) {
 
 	.hero-main-rp {
-		padding: 180px 30px 30px;
+		padding: 240px 30px 30px;
 		left: 0%;
+	}
+
+	.hero-heading-sec2 h1 {
+		font-size: 30px;
+		line-height: 50px;
 	}
     
     .slider-container {

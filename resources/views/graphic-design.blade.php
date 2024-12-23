@@ -2,7 +2,10 @@
 @section('content')
 
 <!--Breadcrumb Area-->
-<section class="breadcrumb-areav2" data-background="images/banner/slider.webp">
+<section class="breadcrumb-areav2">
+    <div class="main-slider-three__bg"></div>
+    <div class="main-slider-three__bg-overly"></div>
+    <div class="main-slider-three__shape-1"></div>
     <div class="container">
         <div class="row ">
             <div class="col-sm-12 col-md-12 col-lg-6 my-auto">

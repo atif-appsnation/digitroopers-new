@@ -8,6 +8,7 @@
     --orange-color: #F15A24;
     --green-color: #A5CB39;
     --white-color: #ffffff;
+    --dark-blue-color: #29368a;
 }
 
 /* Scrollbar Theme */
@@ -9312,4 +9313,50 @@ html .mt15 {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.main-slider-three__bg {
+    background-image: url(../images/hero/slider-2.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: luminosity;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 1500ms ease-in, -webkit-transform 7000ms ease;
+    transition: opacity 1500ms ease-in, -webkit-transform 7000ms ease;
+    transition: transform 7000ms ease, opacity 1500ms ease-in;
+    transition: transform 7000ms ease, opacity 1500ms ease-in, -webkit-transform 7000ms ease;
+    z-index: -1;
+}
+
+.main-slider-three__bg-overly {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #082060;
+    opacity: 0.93;
+}
+
+.main-slider-three__shape-1 {
+    background-image: url(../images/hero/main-slider-three-shape.png);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .70;
 }
