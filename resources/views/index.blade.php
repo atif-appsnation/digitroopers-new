@@ -3,7 +3,7 @@
 
 <section class="hero-slider hero-style" id="hero-slider">
 	<video playsinline autoplay muted loop width="100%" height="100%">
-		<source src="video/banner1.mp4" type="video/mp4">
+		<source src="video/banner.mp4" type="video/mp4">
 	</video>
 	<div class="hero-main-rp container main-ban hidden">
 		<div class="row align-items-center">
