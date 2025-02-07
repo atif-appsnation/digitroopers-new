@@ -21,7 +21,7 @@
 						</span>
 					Partner</h1>
 					<p class="wow fadeIn">DigiTroopers offers top-notch digital marketing services tailored to drive results and elevate your business.</p>
-					<a href="{{url('/contact-us')}}" class="btn-main button-arounder lnk">Let's Work Together
+					<a href="{{url('/contactus')}}" class="btn-main button-arounder lnk">Let's Work Together
 						<i class="fas fa-chevron-right fa-icon"></i>
 						<span class="circle"></span>
 					</a>
@@ -740,7 +740,9 @@
 	<div class="container">
 		<div class="row justify-content-center text-center">
 			<div class="col-lg-8">
-				<div class="common-heading"> <span class="text-effect">what's going on</span>
+				<div class="sctxt">Blogs</div>
+				<div class="common-heading mt-5">
+					<span class="text-effect">what's going on</span>
 					<h2 class="mb30">Latest Stories</h2>
 				</div>
 			</div>
